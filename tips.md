@@ -15,3 +15,7 @@ git 文件回滚
   - 第一步用命令git reset HEAD file，就回到了场景1，
   - 第二步按场景1操作。
 - 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，使用git reset --hard HEAD^。
+
+demo
+==============
+[openssldemo具体内容在这](https://github.com/panyong-057/basis_demo).
