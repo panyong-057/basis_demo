@@ -1,0 +1,7 @@
+include ':show_image'
+include ':aosp_summary'
+include ':animation'
+include ':algorithm'
+include ':design_patterns'
+include ':weixingsign'
+include ':openssl_demo'
