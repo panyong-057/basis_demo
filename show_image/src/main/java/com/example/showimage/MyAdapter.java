@@ -58,7 +58,7 @@ public class MyAdapter extends BaseAdapter {
             if (null == bitmap) {
                 bitmap = ImageResize.resizeBitmap(context, R.mipmap.wyz_p, 80, 80, false, reuseable);
                 ImageCache.getInstance().putBitmapToMemeory(String.valueOf(position), bitmap);
-                ImageCache.getInstance().putBitMapToDisk(String.valueOf(position), bitmap);
+               // ImageCache.getInstance().putBitMapToDisk(String.valueOf(position), bitmap);
                 Log.i("jett", "从网络加载了数据");
             } else {
                 Log.i("jett", "从磁盘中加载了数据");

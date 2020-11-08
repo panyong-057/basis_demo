@@ -7,11 +7,13 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.annotation.Nullable;
+
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
+
+import androidx.annotation.Nullable;
 
 public class SplashView2 extends View {
     private ValueAnimator mAnimator;

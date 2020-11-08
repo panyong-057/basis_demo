@@ -230,6 +230,13 @@ public class ImageCache {
         DiskLruCache.Snapshot snapshot=null;
         Bitmap bitmap=null;
         try {
+
+            if (diskLruCache==null){
+                return null;
+            }
+            if (key==null){
+                return null;
+            }
             snapshot=diskLruCache.get(key);
             if(null==snapshot){
                 return null;

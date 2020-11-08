@@ -2,8 +2,6 @@ package com.example.designpatterns.createmode.builder;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.StyleRes;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -11,15 +9,15 @@ import android.widget.TextView;
 import com.example.designpatterns.createmode.factory.BaseDialog;
 
 public class StoolMainDialog extends BaseDialog {
-    public StoolMainDialog(@NonNull Context context) {
+    public StoolMainDialog( Context context) {
         super(context);
     }
 
-    public StoolMainDialog(@NonNull Context context, int themeResId) {
+    public StoolMainDialog( Context context, int themeResId) {
         super(context, themeResId);
     }
 
-    public StoolMainDialog(@NonNull Context context, Object... obj) {
+    public StoolMainDialog( Context context, Object... obj) {
         super(context);
     }
 
@@ -54,7 +52,7 @@ public class StoolMainDialog extends BaseDialog {
         }
 
 
-        public Builder(@NonNull Context context, @StyleRes int themeResId) {
+        public Builder( Context context,  int themeResId) {
             mContext = context;
             this.mTheme = themeResId;
         }

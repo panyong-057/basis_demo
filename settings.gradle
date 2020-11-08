@@ -1,4 +1,4 @@
-include ':show_image'
+include ':show_image', ':udp_tcp_serialport'
 include ':aosp_summary'
 include ':animation'
 include ':algorithm'

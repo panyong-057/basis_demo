@@ -2,23 +2,24 @@ package com.example.designpatterns.createmode.factory;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 
-public class BaseDialog  extends Dialog {
-    public BaseDialog(@NonNull Context context) {
+public class BaseDialog extends Dialog {
+    public BaseDialog( Context context) {
         super(context);
     }
 
-    public BaseDialog(@NonNull Context context, int themeResId) {
+    public BaseDialog( Context context, int themeResId) {
         super(context, themeResId);
     }
 
-    protected BaseDialog(@NonNull Context context, boolean cancelable, @Nullable OnCancelListener cancelListener) {
+    protected BaseDialog( Context context, boolean cancelable,  OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
     }
 
-    public BaseDialog(@NonNull Context context, Object... obj) {
+    public BaseDialog( Context context, Object... obj) {
         super(context);
     }
+
+
 }
+

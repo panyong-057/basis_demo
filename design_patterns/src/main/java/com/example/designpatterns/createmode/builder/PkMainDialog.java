@@ -2,8 +2,6 @@ package com.example.designpatterns.createmode.builder;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.StyleRes;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -19,15 +17,15 @@ public class PkMainDialog extends BaseDialog {
     }
 
     int type;
-    public PkMainDialog(@NonNull Context context) {
+    public PkMainDialog( Context context) {
         super(context);
     }
 
-    public PkMainDialog(@NonNull Context context, int themeResId) {
+    public PkMainDialog( Context context, int themeResId) {
         super(context, themeResId);
     }
 
-    public PkMainDialog(@NonNull Context context, Object... obj) {
+    public PkMainDialog( Context context, Object... obj) {
         super(context);
     }
 
@@ -64,7 +62,7 @@ public class PkMainDialog extends BaseDialog {
         }
 
 
-        public Builder(@NonNull Context context, @StyleRes int themeResId) {
+        public Builder( Context context,  int themeResId) {
             mContext = context;
             this.mTheme = themeResId;
         }
